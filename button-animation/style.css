@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 #bg-video {
     position: fixed;
     right: 0;
@@ -22,13 +22,13 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 100px;
     color: rgb(0, 0, 0);
     mix-blend-mode: multiply;
     border: #00BFA6;
     animation: shake 31s infinite;
-    letter-spacing: 5px;
+    /* letter-spacing: 2px; */
 
   }
 
