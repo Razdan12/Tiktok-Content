@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box{
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.box .card{
+    position: relative;
+    background: rgba(255, 255, 255, 0.37);
+    width: 300px;
+    min-height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(202, 202, 202, 0.568);
+    border-top: 1px solid rgba(202, 202, 202, 0.836);
+    border-left: 1px solid rgba(202, 202, 202, 0.836);
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(51, 51, 51, 0.37);
+    transform-style: preserve-3d;
+
+}
+
+.element{
+    position: absolute;
+    top: 50px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.37);
+    transform: translateZ(80px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(202, 202, 202, 0.568);
+    border-top: 1px solid rgba(202, 202, 202, 0.836);
+    border-left: 1px solid rgba(202, 202, 202, 0.836);
+    border-radius: 15px;
+    box-shadow: 0 25px 45px rgba(51, 51, 51, 0.37);
+    transform-style: preserve-3d;
+
+}
+
+.element.bg::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(Logo-TikTok.png);
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover .element.bg::before{
+    opacity: 1;
+}
+
+.element.imgBx{
+    top: 0;
+    left: initial;
+    right: 60px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    transform: translateZ(120px);
+}
+
+.element.imgBx img{
+    position: absolute;
+    width: calc(100% - 20px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(202, 202, 202, 0.836);
+    border-left: 1px solid rgba(202, 202, 202, 0.836);
+    border-radius: 15px;
+    box-shadow: 0 25px 45px rgba(51, 51, 51, 0.37);
+    transform-style: preserve-3d;
+    filter: grayscale(100%);
+    transition: 1s;
+
+}
+
+.box:hover .element.imgBx img{
+    filter: grayscale(0);
+}
+
+.element.name{
+    top: 235px;
+    left: initial;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transform: translateZ(150px);
+    background: transparent;
+    backdrop-filter: blur(0);
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: 0.25s;
+    
+}
+
+.box:hover .element.name{
+    top: 120px;
+    opacity: 1;
+}
+
+.element.content{
+    top: initial;
+    left: initial;
+    bottom: 30px;
+    right: 20px;
+    width: 80%;
+    min-height: 200px;
+    padding: 10px;
+    transform: translateZ(140px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(202, 202, 202, 0.568);
+    border-top: 1px solid rgba(202, 202, 202, 0.836);
+    border-left: 1px solid rgba(202, 202, 202, 0.836);
+    border-radius: 15px;
+    box-shadow: 0 25px 45px rgba(51, 51, 51, 0.37);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+}
